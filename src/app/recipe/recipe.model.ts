@@ -4,7 +4,7 @@ export class Recipe {
   public name: string;
   public details: string;
   public imagePath: string;
-  public ingredients :Ingredient [];
+  public ingredients: Ingredient [];
 
   constructor(name: string, desc: string, iPath: string , ingredients: Ingredient []) {
 

@@ -20,7 +20,7 @@ id: number;
 this.route.params.subscribe((params : Params) => {
 this.id = +params['id'];
 this.recipe = this.recipeService.getRecipeById(this.id);
-})
+});
   }
 
   sendToShList(){
@@ -30,6 +30,11 @@ this.recipe = this.recipeService.getRecipeById(this.id);
 
   onEditRecipe(){
    this.router.navigate(['edit'], {relativeTo: this.route })
+  }
+
+  onDeleteRecipe(){
+this.recipeService.deleteRecipe(this.id);
+this.router.navigate(['/recipes']);
   }
 
 }

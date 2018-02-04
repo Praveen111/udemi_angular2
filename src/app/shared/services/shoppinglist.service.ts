@@ -7,7 +7,8 @@ import { RecipeService } from 'app/shared/services/recipe.service';
 export class ShoppinglistService {
   public onAddItemsChanged = new Subject<Ingredient []>();
    startEditing = new Subject<number>();
-  private ingredients: Ingredient[] = [
+
+    private ingredients: Ingredient[] = [
     new Ingredient('Apples', 5),
     new Ingredient('Tomatos', 8)
     ];
